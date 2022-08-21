@@ -7,121 +7,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simple Product Group - v220818</title>
 
-  <link rel="shortcut icon" href="https://www.google.com/s2/favicons?domain=shopify.com" type="image/png">
-  <link rel="stylesheet" href="assets/libs/bootstrap-5.2.0/css/bootstrap.min.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+
   <link rel="stylesheet" href="assets/libs/swiper-8.3.2/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
+<body class="product-group">
 
-  <section class="okck-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6">
-          <img src="assets/img/cover.png" alt="Simple Product Group Cover" class="okck-img-cover img-fluid" />
-        </div>
-        <div class="col-12 col-md-6 okck-content">
-					<div class="okck-content-top">
-						<h1>Everyday items, we have something to suit every occasion.</h1>
-						<p class="lead">
-							At suspendisse augue lectus arcu, accumsan ut sit posuere vitae sit tincidunt semper eu proin leo gravida
-							cursus.
-						</p>
-						<a href="#" class="okck-calltoaction">
-							Shop All Everyday Now!
-						</a>
-					</div>
-					<div class="okck-product-group">
-						<div class="swiper okck-product-swiper">
-							<!-- Additional required wrapper -->
-							<div class="swiper-wrapper">
-								<!-- Slides -->
-								<div class="swiper-slide okck-product">
-									<img src="content/images/content-a.png" width="230" height="310" alt="">
-									<h3>365 Signature Hoodie</h3>
-									<!-- price and colors -->
-									<div>
-										<span class="okck-product-price">€33.95</span>
-										<span class="okck-product-colors">
-											<span class="okck-product-color okck-product-color-active" data-color-hex-code="#99C3CC">
-												<span class="okck-product-color-inner" style="background-color: #99C3CC"> </span>
-											</span>
-											<span class="okck-product-color" data-color-hex-code="#CC9999">
-												<span class="okck-product-color-inner" style="background-color: #CC9999"> </span>
-											</span>
-											<span class="okck-product-color" data-color-hex-code="#CB99CC">
-												<span class="okck-product-color-inner" style="background-color: #CB99CC"> </span>
-											</span>
-											<span class="okck-product-color" data-color-hex-code="#A6CC99">
-												<span class="okck-product-color-inner" style="background-color: #A6CC99"> </span>
-											</span>
-										</span>
-									</div>
-								</div>
-								<div class="swiper-slide okck-product">
-									<img src="content/images/content-b.png" width="230" height="310" alt="">
-									<h3>Organic Skinny High Waist Jeans</h3>
-									<!-- price and colors -->
-									<div>
-										<span class="okck-product-price">€33.95</span>
-										<span class="okck-product-colors">
-											<span class="okck-product-color okck-product-color-active" data-color-hex-code="#99C3CC">
-												<span class="okck-product-color-inner" style="background-color: #99C3CC"> </span>
-											</span>
-											<span class="okck-product-color" data-color-hex-code="#CC9999">
-												<span class="okck-product-color-inner" style="background-color: #CC9999"> </span>
-											</span>
-											<span class="okck-product-color" data-color-hex-code="#CB99CC">
-												<span class="okck-product-color-inner" style="background-color: #CB99CC"> </span>
-											</span>
-											<span class="okck-product-color" data-color-hex-code="#A6CC99">
-												<span class="okck-product-color-inner" style="background-color: #A6CC99"> </span>
-											</span>
-										</span>
-									</div>
-								</div>
-								<div class="swiper-slide okck-product">
-									<img src="content/images/content-c.png" width="230" height="310" alt="">
-									<h3>Organic Skinny High Waist Jeans</h3>
-									<!-- price and colors -->
-									<div>
-										<span class="okck-product-price">€33.95</span>
-										<span class="okck-product-colors">
-											<span class="okck-product-color okck-product-color-active" data-color-hex-code="#99C3CC">
-												<span class="okck-product-color-inner" style="background-color: #99C3CC"> </span>
-											</span>
-											<span class="okck-product-color" data-color-hex-code="#CC9999">
-												<span class="okck-product-color-inner" style="background-color: #CC9999"> </span>
-											</span>
-											<span class="okck-product-color" data-color-hex-code="#CB99CC">
-												<span class="okck-product-color-inner" style="background-color: #CB99CC"> </span>
-											</span>
-											<span class="okck-product-color" data-color-hex-code="#A6CC99">
-												<span class="okck-product-color-inner" style="background-color: #A6CC99"> </span>
-											</span>
-										</span>
-									</div>
-								</div>
+	<section>
+		<div class="product-group-col product-group-cover">
+			<img src="assets/img/cover.png" alt="Product Group Cover" />
+		</div>
+		<div class="product-group-col">
+			<div class="product-group-content">
+				<h1>Everyday tops, we have something to suit every occasion.</h1>
+				<p class="subtitle">
+					At suspendisse augue lectus arcu, accumsan ut sit posuere vitae sit tincidunt semper eu proin leo gravida cursus.					
+				</p>
+				<a href="#" class="product-group-calltoaction">
+					Shop All Everyday Items!
+				</a>
+			</div>
+			<!-- product list -->
+			<div class="product-group-list">
+				<div class="swiper pSwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide product" id="productA">
+							<img src="content/images/content-a.png" alt="Product 1" width="400" height="537" />
+							<h3>
+								365 Signature Hoodie
+							</h3>
+							<div class="price">
+								€33.95
 							</div>
-	
-							<!-- If we need navigation buttons -->
-							<div class="swiper-button-prev"></div>
-							<div class="swiper-button-next"></div>
-	
+							<div class="colors"></div>							
+						</div>
+						<div class="swiper-slide product" id="productB">
+							<img src="content/images/content-b.png" alt="Product 2" width="400" height="537" />
+							<h3>
+								Organic Skinny High Waist Jeans
+							</h3>
+							<div class="price">
+								€33.95
+							</div>
+							<div class="colors"></div>							
+						</div>
+						<div class="swiper-slide product" id="productC">
+							<img src="content/images/content-c.png" alt="Product 3" width="400" height="537" />
+							<h3>
+								Organic Skinny High Waist Jeans
+							</h3>
+							<div class="price">
+								€33.95
+							</div>
+							<div class="colors"></div>	
 						</div>
 					</div>
+					<div class="swiper-button-next"></div>
+				</div>				
+			</div>
+		</div>
+	</section>
 
-
-        </div>
-
-      </div>
-    </div>
-    </div>
-  </section>
-
-  <!-- Script -->
-  <script src="assets/libs/bootstrap-5.2.0/js/bootstrap.min.js"></script>
+  <!-- script -->
   <script src="assets/libs/swiper-8.3.2/swiper-bundle.min.js"></script>
 	<script src="assets/js/script.js"></script>
 </body>
